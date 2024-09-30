@@ -3,7 +3,7 @@ import { User } from "../model/user";
 import bcrypt from "bcrypt"
 
 class UserController {
-    public async create(req: Request, res: Response): Promise<Response>{
+    public async userCreate(req: Request, res: Response){
         const{ name, email, senha} = req.body;
 
         if( !email && !senha){
@@ -34,3 +34,5 @@ class UserController {
         }
     }
 }
+
+export default  new UserController;

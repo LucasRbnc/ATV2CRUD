@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 
-
 const uri = "mongodb://localhost:27017/dbatividade";
 
 const db = mongoose;
